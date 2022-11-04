@@ -1,0 +1,304 @@
+<html>
+<head>
+<title>TestNG:  RegressionTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>RegressionTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>45/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Jun 28 20:27:38 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2793 seconds (2793438 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderplay_Test.C8_Verifyplaysubmenu()'><b>C8_Verifyplaysubmenu</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderplay_Test<br>Parameters: https://staging.d9.icivics.org/games</td>
+<td></td>
+<td>6</td>
+<td>icivics_testcases.Icivics_HomepageHeaderplay_Test@5f049ea1</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderAbout_Test.C24_VerifysubmenuElement()'><b>C24_VerifysubmenuElement</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderAbout_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>181</td>
+<td>icivics_testcases.Icivics_HomepageHeaderAbout_Test@3f191845</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderplay_Test.C9_Verifyplaybuttonlist()'><b>C9_Verifyplaybuttonlist</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderplay_Test<br>Parameters: https://staging.d9.icivics.org/games</td>
+<td></td>
+<td>36</td>
+<td>icivics_testcases.Icivics_HomepageHeaderplay_Test@5f049ea1</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C39_Myicivicsbuttonelementsverification()'><b>C39_Myicivicsbuttonelementsverification</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>174</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeader_Test.C2_VerifyHeaderbuttonforauthenticateduser()'><b>C2_VerifyHeaderbuttonforauthenticateduser</b><br>Test class: icivics_testcases.Icivics_HomepageHeader_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>35</td>
+<td>icivics_testcases.Icivics_HomepageHeader_Test@35dab4eb</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderplay_Test.C10_Verifyplaybuttonelements()'><b>C10_Verifyplaybuttonelements</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderplay_Test<br>Parameters: https://staging.d9.icivics.org/games</td>
+<td></td>
+<td>420</td>
+<td>icivics_testcases.Icivics_HomepageHeaderplay_Test@5f049ea1</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderplay_Test.C12_Verifypageisunderlined()'><b>C12_Verifypageisunderlined</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderplay_Test<br>Parameters: https://staging.d9.icivics.org/games</td>
+<td></td>
+<td>314</td>
+<td>icivics_testcases.Icivics_HomepageHeaderplay_Test@5f049ea1</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeader_Test.C1538_Verifydonationpopup()'><b>C1538_Verifydonationpopup</b><br>Test class: icivics_testcases.Icivics_HomepageHeader_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>14</td>
+<td>icivics_testcases.Icivics_HomepageHeader_Test@35dab4eb</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C37_VerifyIcivicssubmenu()'><b>C37_VerifyIcivicssubmenu</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>29</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderTeach_Test.C15_Verifyteachsubmenu()'><b>C15_Verifyteachsubmenu</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderTeach_Test<br>Parameters: https://staging.d9.icivics.org/about</td>
+<td></td>
+<td>5</td>
+<td>icivics_testcases.Icivics_HomepageHeaderTeach_Test@3ba987b8</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderTeach_Test.C20_verifyclickteachbuttonagain()'><b>C20_verifyclickteachbuttonagain</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderTeach_Test<br>Parameters: https://staging.d9.icivics.org/about</td>
+<td></td>
+<td>5</td>
+<td>icivics_testcases.Icivics_HomepageHeaderTeach_Test@3ba987b8</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C30_Verifydonatebuttonclick()'><b>C30_Verifydonatebuttonclick</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>23</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C41_Verifysubmenuoptionisunderlined()'><b>C41_Verifysubmenuoptionisunderlined</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>47</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageTeacherHeader_Test.C6_verifyaheaderbuttonhoverforauthenticateduser()'><b>C6_verifyaheaderbuttonhoverforauthenticateduser</b><br>Test class: icivics_testcases.Icivics_HomepageTeacherHeader_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>168</td>
+<td>icivics_testcases.Icivics_HomepageTeacherHeader_Test@8519cb4</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C33_Verifysigninbuttonforanonymoususer()'><b>C33_Verifysigninbuttonforanonymoususer</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>6</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C41_verifyselectpageisunderlined()'><b>C41_verifyselectpageisunderlined</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>136</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderAbout_Test.C23_Verifysubmenucount()'><b>C23_Verifysubmenucount</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderAbout_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>28</td>
+<td>icivics_testcases.Icivics_HomepageHeaderAbout_Test@3f191845</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C35_Verifytheavatar()'><b>C35_Verifytheavatar</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>31</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C32_Verifyshopbuttonclick()'><b>C32_Verifyshopbuttonclick</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>9</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C29_Verifydonatebutton()'><b>C29_Verifydonatebutton</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>7</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeader_Test.C2_VerifyHeaderbuttonforanonymoususer()'><b>C2_VerifyHeaderbuttonforanonymoususer</b><br>Test class: icivics_testcases.Icivics_HomepageHeader_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>28</td>
+<td>icivics_testcases.Icivics_HomepageHeader_Test@35dab4eb</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C42_Verifymyicivicsbuttonsubmenuclose()'><b>C42_Verifymyicivicsbuttonsubmenuclose</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>30</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivicvs_HomepageHeaderteach2_Test.C19_Verifyteachsubmenu()'><b>C19_Verifyteachsubmenu</b><br>Test class: icivics_testcases.Icivicvs_HomepageHeaderteach2_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>105</td>
+<td>icivics_testcases.Icivicvs_HomepageHeaderteach2_Test@2d901eb0</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C37_Verifysigninbuttonsubmenu()'><b>C37_Verifysigninbuttonsubmenu</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>7</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderTeach_Test.C17_Verifyteachbuttonelements()'><b>C17_Verifyteachbuttonelements</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderTeach_Test<br>Parameters: https://staging.d9.icivics.org/about</td>
+<td></td>
+<td>93</td>
+<td>icivics_testcases.Icivics_HomepageHeaderTeach_Test@3ba987b8</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageTeacherHeader_Test.C3_Verifyheaderbuttonsforauthenticateduser()'><b>C3_Verifyheaderbuttonsforauthenticateduser</b><br>Test class: icivics_testcases.Icivics_HomepageTeacherHeader_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>32</td>
+<td>icivics_testcases.Icivics_HomepageTeacherHeader_Test@8519cb4</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C34_VerifyIcivicsbutton()'><b>C34_VerifyIcivicsbutton</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>26</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C42_Verifysubmenuoptionisunderlined()'><b>C42_Verifysubmenuoptionisunderlined</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>7</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeader_Test.C1_VerifyLogo()'><b>C1_VerifyLogo</b><br>Test class: icivics_testcases.Icivics_HomepageHeader_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>12</td>
+<td>icivics_testcases.Icivics_HomepageHeader_Test@35dab4eb</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageTeacherHeader_Test.C7_verifyresizeheaderintohamburger()'><b>C7_verifyresizeheaderintohamburger</b><br>Test class: icivics_testcases.Icivics_HomepageTeacherHeader_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>62</td>
+<td>icivics_testcases.Icivics_HomepageTeacherHeader_Test@8519cb4</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderTeach_Test.C16_Verifysubmenucount()'><b>C16_Verifysubmenucount</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderTeach_Test<br>Parameters: https://staging.d9.icivics.org/about</td>
+<td></td>
+<td>7</td>
+<td>icivics_testcases.Icivics_HomepageHeaderTeach_Test@3ba987b8</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C32_Verifyshopbuttonclick()'><b>C32_Verifyshopbuttonclick</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>10</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C31_Verifyshopbutton()'><b>C31_Verifyshopbutton</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>7</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C30_Verifydonatebuttonclick()'><b>C30_Verifydonatebuttonclick</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>25</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageTeacherHeader_Test.C3_Verifyheaderbuttonsforanonymoususer()'><b>C3_Verifyheaderbuttonsforanonymoususer</b><br>Test class: icivics_testcases.Icivics_HomepageTeacherHeader_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>31</td>
+<td>icivics_testcases.Icivics_HomepageTeacherHeader_Test@8519cb4</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C38_Verifysigninbuttonsubmenu()'><b>C38_Verifysigninbuttonsubmenu</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>20</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C29_Verifydonatebutton()'><b>C29_Verifydonatebutton</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>9</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C36_VerifyIcivicssubmenu()'><b>C36_VerifyIcivicssubmenu</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>29</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderplay_Test.C13_Verifyclickonplaybuttonagain()'><b>C13_Verifyclickonplaybuttonagain</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderplay_Test<br>Parameters: https://staging.d9.icivics.org/games</td>
+<td></td>
+<td>7</td>
+<td>icivics_testcases.Icivics_HomepageHeaderplay_Test@5f049ea1</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderAbout_Test.C22_Verifyaboutsubmenu()'><b>C22_Verifyaboutsubmenu</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderAbout_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>55</td>
+<td>icivics_testcases.Icivics_HomepageHeaderAbout_Test@3f191845</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderAbout_Test.C27_Verifyclickaboutbuttonagain()'><b>C27_Verifyclickaboutbuttonagain</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderAbout_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>31</td>
+<td>icivics_testcases.Icivics_HomepageHeaderAbout_Test@3f191845</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageTeacherHeader_Test.C6_Verifyheaderbuttonhoverforanonymoususer()'><b>C6_Verifyheaderbuttonhoverforanonymoususer</b><br>Test class: icivics_testcases.Icivics_HomepageTeacherHeader_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>126</td>
+<td>icivics_testcases.Icivics_HomepageTeacherHeader_Test@8519cb4</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test.C31_Verifyshopbutton()'><b>C31_Verifyshopbutton</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>8</td>
+<td>icivics_testcases.Icivics_HomepageHeaderSigninMisc_Test@d737b89</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test.C35_Verifythenoavatar()'><b>C35_Verifythenoavatar</b><br>Test class: icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test<br>Parameters: https://staging.d9.icivics.org</td>
+<td></td>
+<td>30</td>
+<td>icivics_testcases.Icivics_HomepageHeaderMyicivicsMisc_Test@79e4c792</td></tr>
+<tr>
+<td title='icivics_testcases.Icivics_HomepageTeacherHeader_Test.C4_Verifyheaderelemets()'><b>C4_Verifyheaderelemets</b><br>Test class: icivics_testcases.Icivics_HomepageTeacherHeader_Test<br>Parameters: https://staging.d9.icivics.org/teachers</td>
+<td></td>
+<td>203</td>
+<td>icivics_testcases.Icivics_HomepageTeacherHeader_Test@8519cb4</td></tr>
+</table><p>
+</body>
+</html>
