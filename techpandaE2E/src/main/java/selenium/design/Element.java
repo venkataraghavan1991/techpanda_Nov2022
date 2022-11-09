@@ -209,6 +209,12 @@ public interface Element {
 
 
 	public List<WebElement> propElement1(String locatorType);
+
+
+	public boolean verifyExactTextEQLIGNORECASE(WebElement ele, String expectedText);
+
+
+	void TextType(WebElement ele, String data);
 	
 }
 
