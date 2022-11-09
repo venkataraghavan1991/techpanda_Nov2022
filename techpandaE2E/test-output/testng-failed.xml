@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Mobilesort_Test">
+      <class name="testcases.Accountcreation_Test">
         <methods>
           <include name="setUpClass"/>
           <include name="afterMethod"/>
@@ -12,10 +12,10 @@
           <include name="setValues"/>
           <include name="beforeMethod"/>
           <include name="report"/>
+          <include name="VERIFYSHARING"/>
           <include name="startReport"/>
-          <include name="tp01_VerifyMobilePage"/>
         </methods>
-      </class> <!-- testcases.Mobilesort_Test -->
+      </class> <!-- testcases.Accountcreation_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

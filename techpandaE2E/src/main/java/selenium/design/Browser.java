@@ -195,4 +195,7 @@ public interface Browser {
 	public void zoomin() throws IOException, AWTException;
 
 	
+
+
+	
 }

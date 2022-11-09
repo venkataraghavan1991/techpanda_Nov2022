@@ -101,7 +101,7 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		}
 	}
 
-	@Override
+	
 	public void clearAndType(WebElement ele, String data) {
 		try {
 			ele.clear();
@@ -113,7 +113,17 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		}
 
 	}
+	@Override
+	public void Type(WebElement ele, String data) {
+		try {
+			ele.sendKeys(data);
+			reportStep("The Data :" + data + " entered Successfully", "pass");
+		} catch (ElementNotInteractableException e) {
+			reportStep("The Element " + ele + " is not Interactable", "fail");
+			throw new RuntimeException();
+		}
 
+	}
 	@Override
 	public String getElementText(WebElement ele) {
 		String text = ele.getText();
@@ -161,6 +171,21 @@ public class SeleniumBase extends Reporter implements Browser, Element {
 		}
 		return false;
 	}
+	@Override
+	public boolean verifyExactTextEQLIGNORECASE(WebElement ele, String expectedText) {
+		try {
+			if (ele.getText().equalsIgnoreCase(expectedText)) {
+				reportStep("The expected text contains the actual " + expectedText, "pass");
+				return true;
+			} else {
+				reportStep("The expected text doesn't contain the actual " + expectedText, "fail");
+			}
+		} catch (WebDriverException e) {
+			System.out.println("Unknown exception occured while verifying the Text");
+		}
+		return false;
+	}
+	
 
 	@Override
 	public boolean verifyPartialText(WebElement ele, String expectedText) {
