@@ -42,13 +42,9 @@ public class Accountcreation extends ProjectSpecificMethods {
 		return this;
 	}
 	
-	@When("Click on account link")
+	@When("Click on my account link")
 	public Accountcreation CLICKACCOUNT() throws IOException{
-		click(getprop(propname, "ACCOUNT"));
 		click(getprop(propname, "MYACCOUNT"));
-		
-		//click(getprop(propname, "MYACCOUNT1"));
-		
 		waitTime(3000);
 		reportStep("Account link is clicked", "Pass");
 		return this;  
@@ -81,7 +77,7 @@ public class Accountcreation extends ProjectSpecificMethods {
 
 @And("verify registration is done")
 	public Accountcreation VERIFYREGISTRATION() throws IOException{
-	verifyExactText(getprop(propname,"VERIFYREGISTRATION"),"Thank you for registering with Main Website Store.");
+	verifyExactText(getprop(propname,"VERIFYREGISTRATION"),getPropfile(propname,"EXPECTEDVERIFYREGISTRATION"));
 	
 		return this;  
 		}
@@ -125,7 +121,7 @@ public class Accountcreation extends ProjectSpecificMethods {
 
 	@Then("Check wishlist is shared")
 	public Accountcreation VERIFYWISHLIST() throws IOException{
-		verifyExactText(getprop(propname,"VERIFYSHAREWISHLIST"),"Your Wishlist has been shared.");
+		verifyExactText(getprop(propname,"VERIFYSHAREWISHLIST"),(getPropfile(propname,"EXPECTEDVERIFYSHAREWISHLIST")));
 		return this;  
 		}
 

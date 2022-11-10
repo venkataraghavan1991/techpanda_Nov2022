@@ -46,7 +46,7 @@ String Actualerrormessage;
 		reportStep("Mobile menu is clicked", "Pass");
 		return this;
 }
- @And("In the list of all mobile,clik on 'ADD TO CART' for sony xperia mobile") 
+ @And("In the list of all mobile,clik on ADD TO CART for sony xperia mobile") 
 	 public AddCart  ADDTOCART() throws IOException {
 	
 		 click(getprop(propname, "ADDTOCART"));
@@ -56,7 +56,7 @@ String Actualerrormessage;
 			return this;
 	 }
  
-@And("Change 'QTY' value to 1000 and click update button")
+@And("Change QTY value to 1000 and click UPDATE button")
  public AddCart UPDATECART() throws IOException{
 	//WebElement QTY=driver.findElement(By.xpath("//input[@class='input-text qty']"));
 	//clearAndType(QTY,"1000");
@@ -83,7 +83,7 @@ String Actualerrormessage;
 
     return this;
 	}
-	@And("Then click on 'EMPTY CART'")  
+	@And("Then click on EMPTY CART")  
 	public AddCart EMPTYCART() throws IOException{
 		click(getprop(propname, "EMPTYCART"));
 		 waitTime(3000);

@@ -1,7 +1,7 @@
 Feature: Testcase - Account creation
 Scenario: Verify you can create account in E-commerce site and can share wishlist to other people using email
 Given Launch the techpanda URL
-When Click on account link
+When Click on my account link
 And Click create Account link and fill new user information except email ID
 And Click Register
 And verify registration is done
