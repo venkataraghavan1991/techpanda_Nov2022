@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.Purchaseproducts_Test">
+      <class name="testcases.Savepdf_test">
         <methods>
           <include name="setUpClass"/>
           <include name="afterMethod"/>
           <include name="tearDownClass"/>
-          <include name="Productspurchase"/>
+          <include name="Savefiletopdf"/>
           <include name="stopReport"/>
-          <include name="setValues"/>
           <include name="beforeMethod"/>
           <include name="report"/>
+          <include name="setValues"/>
           <include name="startReport"/>
         </methods>
-      </class> <!-- testcases.Purchaseproducts_Test -->
+      </class> <!-- testcases.Savepdf_test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

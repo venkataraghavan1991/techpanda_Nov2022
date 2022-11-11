@@ -3,7 +3,7 @@ Scenario: Verify that you will be able to save previously placed order as a pdf 
 Given Launch the techpanda URL
 When Click on my account link
 And Login in application using previously created credential
-And Click on My Orders
+And Click on My DasShboard
 And Click on View Order
 And Verify the previously created order is displayed in RECENT ORDERS table and status is Pending
 And Click on Print Order link
