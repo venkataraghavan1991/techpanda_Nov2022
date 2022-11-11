@@ -2,58 +2,58 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-10T08:43:46 PST" name="Default suite" finished-at="2022-11-10T08:44:59 PST" duration-ms="72594">
+  <suite started-at="2022-11-10T18:23:47 PST" name="Default suite" finished-at="2022-11-10T18:24:21 PST" duration-ms="34274">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testcases.Savepdf_test@4a8355dd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-11-10T08:43:46 PST" name="Default test" finished-at="2022-11-10T08:44:59 PST" duration-ms="72594">
-      <class name="testcases.Purchaseproducts_Test">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:43:46 PST" name="startReport" finished-at="2022-11-10T08:43:46 PST" duration-ms="500" status="PASS">
+    <test started-at="2022-11-10T18:23:47 PST" name="Default test" finished-at="2022-11-10T18:24:21 PST" duration-ms="34274">
+      <class name="testcases.Savepdf_test">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:23:46 PST" name="startReport" finished-at="2022-11-10T18:23:47 PST" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setValues()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:43:46 PST" name="setValues" finished-at="2022-11-10T08:43:46 PST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setValues()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:23:47 PST" name="setValues" finished-at="2022-11-10T18:23:47 PST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setValues -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:43:46 PST" name="setUpClass" finished-at="2022-11-10T08:43:46 PST" duration-ms="242" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:23:47 PST" name="setUpClass" finished-at="2022-11-10T18:23:47 PST" duration-ms="272" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4c24f3a2]]>
+                <![CDATA[org.testng.TestRunner@7f8a9454]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="report()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:43:46 PST" name="report" finished-at="2022-11-10T08:43:46 PST" duration-ms="14" status="PASS">
+        <test-method is-config="true" signature="report()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:23:47 PST" name="report" finished-at="2022-11-10T18:23:47 PST" duration-ms="12" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- report -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:43:46 PST" name="beforeMethod" finished-at="2022-11-10T08:43:49 PST" duration-ms="2956" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:23:47 PST" name="beforeMethod" finished-at="2022-11-10T18:23:50 PST" duration-ms="3310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="Productspurchase()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:43:49 PST" name="Productspurchase" finished-at="2022-11-10T08:44:58 PST" duration-ms="69017" status="PASS">
+        <test-method signature="Savefiletopdf()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:23:50 PST" name="Savefiletopdf" finished-at="2022-11-10T18:24:21 PST" duration-ms="30326" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Productspurchase -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:44:58 PST" name="afterMethod" finished-at="2022-11-10T08:44:59 PST" duration-ms="311" status="PASS">
+        </test-method> <!-- Savefiletopdf -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:24:21 PST" name="afterMethod" finished-at="2022-11-10T18:24:21 PST" duration-ms="291" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:44:59 PST" name="tearDownClass" finished-at="2022-11-10T08:44:59 PST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:24:21 PST" name="tearDownClass" finished-at="2022-11-10T18:24:21 PST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="stopReport()[pri:0, instance:testcases.Purchaseproducts_Test@4a8355dd]" started-at="2022-11-10T08:44:59 PST" name="stopReport" finished-at="2022-11-10T08:45:00 PST" duration-ms="1057" status="PASS">
+        <test-method is-config="true" signature="stopReport()[pri:0, instance:testcases.Savepdf_test@4a8355dd]" started-at="2022-11-10T18:24:21 PST" name="stopReport" finished-at="2022-11-10T18:24:23 PST" duration-ms="1610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopReport -->
-      </class> <!-- testcases.Purchaseproducts_Test -->
+      </class> <!-- testcases.Savepdf_test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

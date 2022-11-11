@@ -94,7 +94,8 @@ public class Purchaseproducts extends ProjectSpecificMethods {
 	
 	@And("Verify Shipping cost generated")
 	public Purchaseproducts VERIFYSHIPPINGCOST() throws IOException {
-		verifyDisplayed(getprop(propname,"FLATRATE"));
+		 verifyDisplayed(getprop(propname,"FLATRATE"));
+		
 		verifyDisplayed(getprop(propname,"SHIPPINGCOST"));
 		waitTime(3000);
 		reportStep("shipping cost has been generated", "Pass");
@@ -104,7 +105,11 @@ public class Purchaseproducts extends ProjectSpecificMethods {
 
 	@And("Select Shipping Cost, Update Total")
 	public Purchaseproducts UPDATETOTAL() throws IOException {
-		verifySelected(getprop(propname, "SELECTSHIPPINGCOST"));
+		
+verifySelected(getprop(propname, "SELECTSHIPPINGCOST"));
+				
+		
+		click((getprop(propname,"SELECTSHIPPINGCOST")));
 		click(getprop(propname, "UPDATETOTAL"));
 		waitTime(3000);
 		reportStep("shipping cost updated", "Pass");
@@ -148,7 +153,7 @@ public class Purchaseproducts extends ProjectSpecificMethods {
 		clearAndType(getprop(propname, "BILLINGZIP"),"542896");
 		selectDropDownUsingText(getprop(propname, "BILLINGCOUNTRY"),"United States");
 		clearAndType(getprop(propname, "BILLINGTELEPHONE"),"12345678");
-		//click(getprop(propname, "SHIPTODIFFERENTADDRESS"));
+		
 		click(getprop(propname, "BILLINGCONTINUE"));
 		
 		waitTime(3000);
@@ -208,6 +213,7 @@ public Purchaseproducts CLICKSHIPPINGMETHOD() throws IOException {
 		verifyExactTextEQLIGNORECASE(getprop(propname,"ORDER"),(getPropfile(propname,"ORDERMESSAGE")));
 		
 		String ordernumber=getElementText(getprop(propname,"CONFORMATIONNUMBER"));
+		System.out.println("Confirmation number is: "+ordernumber);
 		waitTime(3000);
 		reportStep("Order verified", "Pass");
 		return this;	
